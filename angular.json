@@ -7,7 +7,7 @@
             "projectType": "application",
             "schematics": {
                 "@schematics/angular:component": {
-                    "style": "sass"
+                    "style": "less"
                 }
             },
             "root": "",
@@ -24,7 +24,7 @@
                         "tsConfig": "tsconfig.app.json",
                         "aot": false,
                         "assets": ["src/favicon.ico", "src/assets"],
-                        "styles": ["src/styles.sass"],
+                        "styles": ["src/styles.less"],
                         "scripts": []
                     },
                     "configurations": {
@@ -79,7 +79,7 @@
                         "tsConfig": "tsconfig.spec.json",
                         "karmaConfig": "karma.conf.js",
                         "assets": ["src/favicon.ico", "src/assets"],
-                        "styles": ["src/styles.sass"],
+                        "styles": ["src/styles.less"],
                         "scripts": []
                     }
                 },

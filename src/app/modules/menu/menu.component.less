@@ -1,0 +1,28 @@
+@import '../../../shared';
+
+:host {
+    display: block;
+    position: fixed;
+    width: 150px;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+
+.menu {
+    font-size: 24px;
+    text-align: center;
+    padding: 12px 0;
+
+    &__item {
+        .transition(color);
+        padding: 8px 0;
+        color: @text-color;
+        cursor: pointer;
+        outline: none;
+
+        &:hover {
+            color: lighten(@text-color, 30%);
+        }
+    }
+}
