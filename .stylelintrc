@@ -1,0 +1,5 @@
+{
+    "extends": [
+        "@tinkoff/linters/stylelint/bases/prettier.stylelint.json"
+    ]
+}
