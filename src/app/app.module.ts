@@ -5,6 +5,7 @@ import {AppComponent} from './app.component';
 import {HomeModule} from './pages/home/home.module';
 import {AppRouterModule} from './app-router.module';
 import {MenuModule} from './modules/menu/menu.module';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
     declarations: [AppComponent],
@@ -14,6 +15,7 @@ import {MenuModule} from './modules/menu/menu.module';
         AppRouterModule,
         HomeModule,
         MenuModule,
+        HttpClientModule,
     ],
     bootstrap: [AppComponent],
 })

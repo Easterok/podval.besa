@@ -3,6 +3,7 @@
 @menu-width: 150px;
 
 :host {
+    position: relative;
     display: flex;
     height: 100%;
     width: 100%;
@@ -23,4 +24,46 @@
 .title {
     text-transform: uppercase;
     color: @text-color;
+}
+
+.lamp {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    width: 44px;
+    height: 44px;
+    color: @base-color;
+    animation: lamp-light 20s infinite ease;
+    transform: translateY(-10px);
+}
+
+@keyframes lamp-light {
+    0%,
+    100% {
+        filter: drop-shadow(0 15px 20px rgba(255, 255, 0, `Math.random() `));
+    }
+
+    10%,
+    90% {
+        filter: drop-shadow(0 15px 20px rgba(255, 255, 0, `Math.random() `));
+    }
+
+    20%,
+    80% {
+        filter: drop-shadow(0 15px 20px rgba(255, 255, 0, `Math.random() `));
+    }
+
+    30%,
+    70% {
+        filter: drop-shadow(0 15px 20px rgba(255, 255, 0, `Math.random() `));
+    }
+
+    40%,
+    60% {
+        filter: drop-shadow(0 15px 20px rgba(255, 255, 0, `Math.random() `));
+    }
+
+    50% {
+        filter: drop-shadow(0 15px 20px rgba(255, 255, 0, 0.3));
+    }
 }

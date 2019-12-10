@@ -1,3 +1,4 @@
+<mat-icon *ngIf="showIcon$ | async" svgIcon="lamp" class="lamp" [@showIcon]></mat-icon>
 <div class="line" (pbHovered)="hoveredChange($event)">
     <h1 class="title">Podval besa</h1>
 </div>
