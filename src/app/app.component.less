@@ -3,45 +3,10 @@
 @menu-width: 150px;
 
 :host {
-    display: block;
+    display: flex;
     height: 100%;
 }
 
 .container {
-    position: relative;
-    display: flex;
-    height: 100%;
     width: 100%;
-    flex-direction: column;
-}
-
-.line {
-    .transition(all);
-    position: absolute;
-    top: 50%;
-    max-width: 1200px;
-    transform: translateY(-50%);
-    width: ~'calc(100% - @{menu-width})';
-    background-color: @base-color;
-    padding: 12px 20px;
-    text-align: right;
-    font-size: 30px;
-    cursor: pointer;
-    box-sizing: border-box;
-
-    &_top {
-        font-size: 16px;
-        top: 20px;
-        transform: translateY(0);
-    }
-}
-
-.title {
-    text-transform: uppercase;
-    color: @text-color;
-}
-
-.routes {
-    position: absolute;
-    top: 100px;
 }

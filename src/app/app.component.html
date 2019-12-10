@@ -1,17 +1,4 @@
 <div class="container">
-    <div
-        *ngIf="showLine$ | async"
-        [@opacity]
-        class="line"
-        [class.line_top]="!isRoot"
-        (click)="toggleMenu()"
-    >
-        <h1 class="title">Podval besa</h1>
-    </div>
-
-    <div class="routes">
-        <router-outlet></router-outlet>
-    </div>
+    <router-outlet></router-outlet>
 </div>
-
-<pb-menu *ngIf="menuOpened$ | async" [@menuOpened]></pb-menu>
+<pb-menu></pb-menu>

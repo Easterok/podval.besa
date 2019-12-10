@@ -1,0 +1,26 @@
+@import '../../../shared';
+
+@menu-width: 150px;
+
+:host {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.line {
+    .transition(all);
+    max-width: 1200px;
+    width: 100%;
+    background-color: @base-color;
+    padding: 12px 20px;
+    text-align: right;
+    font-size: 30px;
+    box-sizing: border-box;
+}
+
+.title {
+    text-transform: uppercase;
+    color: @text-color;
+}
